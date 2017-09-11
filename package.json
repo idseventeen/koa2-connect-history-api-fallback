@@ -11,8 +11,20 @@
         "history-api",
         "connect-history-api-fallback",
         "vue2",
-        "vue-router:history"
+        "vue-router:history",
+        "koa2 vue-router"
     ],
     "author": "Shen7",
-    "license": "MIT"
+    "license": "MIT",
+    "directories": {
+        "lib": "lib"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ishen7/koa2-connect-history-api-fallback.git"
+    },
+    "bugs": {
+        "url": "https://github.com/ishen7/koa2-connect-history-api-fallback/issues"
+    },
+    "homepage": "https://github.com/ishen7/koa2-connect-history-api-fallback#readme"
 }
