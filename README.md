@@ -10,20 +10,35 @@ koa2的一个中间件，用于处理vue-router使用history模式返回index.ht
 $ npm install --save 'koa2-connect-history-api-fallback'
 ```
 
-## Example
-```bash
+## Use
+在原作者的使用方法下增加了白名单选项，原作者的插件默认会将所有的请求都指向到index.html，这样可能就会导致项目内其他路由也被指向到index.html
+使用方法如下：
+``` javascript
 const Koa = require('koa');
-
-# require 'koa2-connect-history-api-fallback' middleware
 const historyApiFallback = require('koa2-connect-history-api-fallback');
-
-# create app
 const app = new Koa();
 
-# use historyApiFallback
+// handle fallback for HTML5 history API
+app.use(historyApiFallback({ whiteList: ['/api'] }));
+
+// other middlewares
+app.use(...);
+```
+
+## Example
+```javascript
+const Koa = require('koa');
+
+// require 'koa2-connect-history-api-fallback' middleware
+const historyApiFallback = require('koa2-connect-history-api-fallback');
+
+// create app
+const app = new Koa();
+
+// use historyApiFallback
 app.use(historyApiFallback());
 
-# other middlewares
+// other middlewares
 app.use(...);
 
 ```
