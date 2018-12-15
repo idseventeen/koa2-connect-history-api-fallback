@@ -4,6 +4,7 @@
   "description": "Fallback to index.html for applications that are using the HTML 5 history API",
   "source": "src/index.js",
   "main": "dist/index.js",
+  "types": "types/index.d.ts",
   "scripts": {
     "build": "tsc",
     "lint": "tslint -c tslint.json 'src/**/*.ts'",
