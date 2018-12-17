@@ -22,7 +22,7 @@ interface IOptions {
   disableDotRule?: boolean
 }
 
-function logger (options?: IOptions) {
+function historyApiFallback (options?: IOptions) {
   const logger = getLogger(options)
 
   return async (ctx: Context, next: Function) => {
@@ -107,5 +107,5 @@ function getLogger (options: IOptions) {
   return Function()
 }
 
-export default logger
-export { logger }
+export default historyApiFallback
+export { historyApiFallback }
