@@ -13,7 +13,7 @@ declare interface IOptions {
   disableDotRule?: boolean
 }
 
-declare function logger (options?: IOptions): void
+declare function historyApiFallback (options?: IOptions): void
 
-export default logger
-export { logger }
+export default historyApiFallback
+export { historyApiFallback }
