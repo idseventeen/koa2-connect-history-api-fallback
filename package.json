@@ -1,30 +1,43 @@
 {
-    "name": "koa2-connect-history-api-fallback",
-    "version": "0.0.6",
-    "description": "Fallback to index.html for applications that are using the HTML 5 history API",
-    "main": "index.js",
-    "scripts": {
-        "test": "test"
-    },
-    "keywords": [
-        "koa2",
-        "history-api",
-        "connect-history-api-fallback",
-        "vue2",
-        "vue-router:history",
-        "koa2 vue-router"
-    ],
-    "author": "Shen7",
-    "license": "MIT",
-    "directories": {
-        "lib": "lib"
-    },
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/ishen7/koa2-connect-history-api-fallback.git"
-    },
-    "bugs": {
-        "url": "https://github.com/ishen7/koa2-connect-history-api-fallback/issues"
-    },
-    "homepage": "https://github.com/ishen7/koa2-connect-history-api-fallback#readme"
+  "name": "koa2-connect-history-api-fallback",
+  "version": "0.0.6",
+  "description": "Fallback to index.html for applications that are using the HTML 5 history API",
+  "source": "src/index.js",
+  "main": "dist/index.js",
+  "types": "types/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "lint": "tslint -c tslint.json 'src/**/*.ts'",
+    "lint--fix": "tslint -c tslint.json 'src/**/*.ts' --fix"
+  },
+  "author": "Shen7",
+  "license": "MIT",
+  "directories": {
+    "src": "src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ishen7/koa2-connect-history-api-fallback.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ishen7/koa2-connect-history-api-fallback/issues"
+  },
+  "homepage": "https://github.com/ishen7/koa2-connect-history-api-fallback#readme",
+  "keywords": [
+    "koa2",
+    "history-api",
+    "connect-history-api-fallback",
+    "vue2",
+    "vue-router:history",
+    "koa2 vue-router"
+  ],
+  "devDependencies": {
+    "@types/koa": "^2.0.47",
+    "@types/node": "^10.12.15",
+    "eslint": "^5.9.0",
+    "tslint": "^5.11.0",
+    "tslint-config-standard": "^8.0.1",
+    "typescript": "^3.2.2",
+    "typescript-eslint-parser": "^21.0.2"
+  }
 }
