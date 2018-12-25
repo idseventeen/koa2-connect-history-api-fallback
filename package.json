@@ -1,6 +1,6 @@
 {
   "name": "koa2-connect-history-api-fallback",
-  "version": "0.0.6",
+  "version": "0.1.0",
   "description": "Fallback to index.html for applications that are using the HTML 5 history API",
   "source": "src/index.js",
   "main": "dist/index.js",
