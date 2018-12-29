@@ -5,7 +5,7 @@
  */
 
 import * as url from 'url'
-import { Context } from 'koa'
+import { Context, Middleware } from 'koa'
 
 interface IRewrites {
   from: string,
@@ -22,7 +22,7 @@ interface IOptions {
   disableDotRule?: boolean
 }
 
-function historyApiFallback (options?: IOptions) {
+function historyApiFallback (options?: IOptions): Middleware {
   const logger = getLogger(options)
 
   return async (ctx: Context, next: Function) => {

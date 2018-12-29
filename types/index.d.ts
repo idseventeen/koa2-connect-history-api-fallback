@@ -1,3 +1,5 @@
+import { Middleware } from 'koa'
+
 declare interface IRewrites {
   from: string,
   to: string
@@ -13,7 +15,7 @@ declare interface IOptions {
   disableDotRule?: boolean
 }
 
-declare function historyApiFallback (options?: IOptions): void
+declare function historyApiFallback (options?: IOptions): Middleware
 
 export default historyApiFallback
 export { historyApiFallback }
