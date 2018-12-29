@@ -1,11 +1,12 @@
 {
   "name": "koa2-connect-history-api-fallback",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Fallback to index.html for applications that are using the HTML 5 history API",
   "source": "src/index.js",
   "main": "dist/index.js",
   "types": "types/index.d.ts",
   "scripts": {
+    "prepublishOnly": "npm run lint & npm run build",
     "build": "tsc",
     "lint": "tslint -c tslint.json 'src/**/*.ts'",
     "lint--fix": "tslint -c tslint.json 'src/**/*.ts' --fix"
