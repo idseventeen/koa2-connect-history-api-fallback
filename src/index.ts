@@ -23,6 +23,7 @@ interface IOptions {
 }
 
 function historyApiFallback (options?: IOptions): Middleware {
+  options = options || {}
   const logger = getLogger(options)
 
   return async (ctx: Context, next: Function) => {
