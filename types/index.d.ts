@@ -2,7 +2,7 @@ import { Middleware } from 'koa'
 
 declare interface IRewrites {
   from: string,
-  to: string
+  to: string|Function
 }
 
 declare interface IOptions {
